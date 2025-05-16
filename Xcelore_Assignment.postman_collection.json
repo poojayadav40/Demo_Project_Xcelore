@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "c4867abf-cf5c-488a-b3ac-756d4e4173f4",
+		"name": "Demo_Project_Xcelore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38927662"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8090/api/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dr. Shreya\",\r\n    \"city\": \"Faridabad\",\r\n    \"email\": \"shreya@1234.com\",\r\n    \"phoneNumber\": \"shreya@1234.com543210\",\r\n    \"speciality\": \"Orthopaedic\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/doctors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/api/suggestions/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dr. Shreya\",\r\n    \"city\": \"Faridabad\",\r\n    \"email\": \"shreya@1234.com\",\r\n    \"phoneNumber\": \"9988776655\",\r\n    \"speciality\": \"Orthopaedic\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/suggestions/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"suggestions",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
